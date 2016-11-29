@@ -1,19 +1,19 @@
 #Financial Index Scraping:
 
-This project can make you get the indices of three main financial indices and save results into files in the 'indices' directory.
+This project can make you get the indices of three main financial indices and save results into files in the 'indices' directory.  
 The data is scraped from the web [FINANCIAL TIMES](https://markets.ft.com/data/). 
 
 ##Getting Started:
 
 ###Prerequisites:
 
-The development enviroment of this project is Ubuntu 16.04 LTS
+The development enviroment of this project is *Ubuntu 16.04 LTS*
 
 ###Dependencies:
 
-python2.7
-Beautifulsoup4
-requests
+*python2.7*  
+*Beautifulsoup4*  
+*Requests*  
 (See the requirements.txt in the same directory for detail)
 
 ###Code Example:
@@ -42,7 +42,7 @@ Learning some scraping skills and familiar with git operations.
 
 ##Contributors:
 
-You can learn about beautifulsoup4 library (https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for scraping skills.
+You can learn about *beautifulsoup4 library* (https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for scraping skills.
 
 ##License:
 
