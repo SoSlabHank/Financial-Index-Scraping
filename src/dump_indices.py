@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     args = sys.argv
     if len(args) < 2 or not args[1] in ajax_get_base_urls:
-        print "[System] You should give proper parameter. Please see the README.md file."
+        print "[Help] You should give a proper parameter ('sp500' or 'ftse' or 'ftsm'). Please read the README.md file for detail."
         exit()
 
     

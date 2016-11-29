@@ -11,7 +11,6 @@ import os.path as op
 from bs4 import BeautifulSoup
 
 
-
 def parse_indices(html_bundle):
     
     soup = BeautifulSoup(html_bundle.encode('utf-8'), "html.parser")
@@ -41,4 +40,5 @@ def mkdir_p(path):
         if exc.errno == errno.EEXIST and os.path.isdir(path):
             pass
         else: raise
+
 
