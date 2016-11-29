@@ -1,7 +1,7 @@
 #Financial Index Scraping:
 
 This project can make you get the indices of three main financial indices and save results into files in the 'indices' directory.
-The data is scraped from the web 'https://markets.ft.com/data/'. 
+The data is scraped from the web [FINANCIAL TIMES](https://markets.ft.com/data/). 
 
 ##Getting Started:
 
@@ -19,16 +19,16 @@ requests
 ###Code Example:
 
 ####for S&P 500 INDEX:
-$cd {the path to 'Financial-Index-Scraping'}/src
-$python dump_indices.py sp500
+    $cd {the path to 'Financial-Index-Scraping'}/src
+    $python dump_indices.py sp500
 
 ####for FTSE 100 INDEX:
-$cd {the path to 'Financial-Index-Scraping'}/src
-$python dump_indices.py ftse
+    $cd {the path to 'Financial-Index-Scraping'}/src
+    $python dump_indices.py ftse
 
 ####for FTSE 250 MID INDEX:
-$cd {the path to 'Financial-Index-Scraping'}/src
-$python dump_indices.py ftsm
+    $cd {the path to 'Financial-Index-Scraping'}/src
+    $python dump_indices.py ftsm
 
 ##Motivation:
 
@@ -36,9 +36,9 @@ Learning some scraping skills and familiar with git operations.
 
 ##Installation
 
-$git clone https://github.com/SoSlabHank/Financial-Index-Scraping.git
-$cd Financial-Index-Scraping
-$pip install -r requirement.txt
+    $git clone https://github.com/SoSlabHank/Financial-Index-Scraping.git
+    $cd Financial-Index-Scraping
+    $pip install -r requirement.txt
 
 ##Contributors:
 
