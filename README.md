@@ -38,7 +38,7 @@ Learning some scraping skills and familiar with git operations.
 
     $git clone https://github.com/SoSlabHank/Financial-Index-Scraping.git
     $cd Financial-Index-Scraping
-    $pip install -r requirement.txt
+    $pip install -r requirements.txt
 
 ##Contributors:
 
