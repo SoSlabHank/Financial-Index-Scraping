@@ -11,9 +11,7 @@ import json
 import time
 import requests
 
-from src.lib.scraping_helper import parse_indices, save_to_file
-from pip._vendor.requests.exceptions import ConnectionError
-
+from lib.scraping_helper import parse_indices, save_to_file
 
 
 ajax_get_base_urls = {"sp500": "https://markets.ft.com/data/indices/ajax/getindexconstituents?xid=575769&pagenum=%s",
@@ -23,7 +21,7 @@ ajax_get_base_urls = {"sp500": "https://markets.ft.com/data/indices/ajax/getinde
 
 def main(idx_name, base_url):
 
-    page_num = 100
+    page_num = 0
     while True:
         
         page_num += 1
@@ -33,7 +31,7 @@ def main(idx_name, base_url):
             ###print base_url % str(page_num)
             response_data = json.loads(requests.get(base_url % str(page_num)).text)
             html_bundle = response_data["html"]
-        except ConnectionError:
+        except requests.exceptions.ConnectionError:
             page_num += -1
             print "[Warn] Try connecting again:", sys.exc_info()[0]
             time.sleep(1)
@@ -53,12 +51,12 @@ def main(idx_name, base_url):
 if __name__ == '__main__':
 
     args = sys.argv
-    if len(args) < 1 and not args[0] in ajax_get_base_urls:
+    if len(args) < 2 or not args[1] in ajax_get_base_urls:
         print "[System] You should give proper parameter. Please see the readme file."
         exit()
 
     
-    idx_name = args[0]
+    idx_name = args[1]
     main(idx_name, ajax_get_base_urls[idx_name])
     
     exit()
