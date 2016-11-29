@@ -1,50 +1,50 @@
-Financial Index Scraping:
+#Financial Index Scraping:
 
 This project can make you get the indices of three main financial indices and save results into files in the 'indices' directory.
 The data is scraped from the web 'https://markets.ft.com/data/'. 
 
-Getting Started:
+##Getting Started:
 
-Prerequisites:
+###Prerequisites:
 
 The development enviroment of this project is Ubuntu 16.04 LTS
 
-Dependencies:
+###Dependencies:
 
 python2.7
 Beautifulsoup4
 requests
 (See the requirements.txt in the same directory for detail)
 
-Code Example:
+###Code Example:
 
-for S&P 500 INDEX:
+####for S&P 500 INDEX:
 $cd {the path to 'Financial-Index-Scraping'}/src
 $python dump_indices.py sp500
--------------------------------------------------
-for FTSE 100 INDEX:
+
+####for FTSE 100 INDEX:
 $cd {the path to 'Financial-Index-Scraping'}/src
 $python dump_indices.py ftse
--------------------------------------------------
-for FTSE 250 MID INDEX:
+
+####for FTSE 250 MID INDEX:
 $cd {the path to 'Financial-Index-Scraping'}/src
 $python dump_indices.py ftsm
 
-Motivation:
+##Motivation:
 
 Learning some scraping skills and familiar with git operations.
 
-Installation
+##Installation
 
 $git clone https://github.com/SoSlabHank/Financial-Index-Scraping.git
 $cd Financial-Index-Scraping
 $pip install -r requirement.txt
 
-Contributors:
+##Contributors:
 
 You can learn about beautifulsoup4 library (https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for scraping skills.
 
-License:
+##License:
 
 These code can be copied for everyone who want to use it and needn't to ask me.
 
